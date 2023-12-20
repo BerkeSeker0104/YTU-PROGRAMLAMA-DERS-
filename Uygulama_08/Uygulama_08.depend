@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1703066443 source:c:\users\berke\desktop\software\ytu-programlama-dersi\uygulama_08\main.c
+	<stdio.h>
+	<stdlib.h>
+
