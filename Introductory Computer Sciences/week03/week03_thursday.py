@@ -37,7 +37,11 @@ bu kütüphaneyi kullanabilmek için:
 
 import numpy as np
 
-dizi = np.array([1,2,3])
+'''
+.array fonksiyonu n boyutlu dizileri oluşturmak için kullanılır.
+'''
+
+dizi = np.array([1,2,3]) 
 print(dizi)
 
 #prod() fonksiyonu, 
@@ -190,7 +194,7 @@ print(crowded.index("Istanbul")) #listdeki konumunu veriyor bize 0 yani ilk elem
 print(crowded.index("Ankara"))
 
 '''
-Python'da "Calculating a count" (sayma işlemi) ifadesi, bir dizideki veya 
+Python'da "Calculating a count" (count) ifadesi, bir dizideki veya 
 stringdeki belirli bir ögenin (elemanın) kaç kez tekrarladığını bulmak anlamına gelir.
 '''
 
