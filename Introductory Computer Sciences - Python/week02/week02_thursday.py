@@ -49,8 +49,14 @@ print(type(x))
 my_str = "Telecommunication"
 
 print(my_str[:5]) # ilk 5 karakteri basıtırır. 
-print(my_str[5:]) # son 5 karakteri bastırır.
-print(my_str[2:5])  
+print(my_str[5:]) # ilk 5 karakterden sonrasını bastırır
+print(my_str[2:5]) # aralıklar arasını bastırır
+print(my_str[2:15:3]) # 2 hangi karakter ile başlayacağını :15 son karaterin ne olduğunu, :3 kaçar kaçar atlayacağını belirtir
+print(my_str[-3:]) # son 3 karakteri bastırır
+print(my_str[:-3]) # son 3 karakteri siler geri kalanını bastırır.
+print(my_str[-8:-3]) # son 8 karakteri bastıracak ama son 3 karakteride silecek
+print(my_str[-12:-5:2])
+
 
 # List
 
