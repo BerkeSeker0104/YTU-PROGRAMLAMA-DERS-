@@ -118,7 +118,7 @@ print(iris_df)
 # Creating a dataframe from a csv file
 
 import pandas as pd
-iris_df_new = pd.read_csv("C:/Users/berke/Desktop/Software/YTU-PROGRAMLAMA-DERSLERİ\Introductory Computer Sciences\week05\iris.csv")
+iris_df_new = pd.read_csv("C:/Users/berke/Desktop/Software/YTU-PROGRAMLAMA-DERSLERİ/Introductory Computer Sciences - Python\week05\iris.csv")
 print(iris_df_new)
 
 '''

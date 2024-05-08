@@ -11,7 +11,7 @@ pop = [15.068, 5.504, 4.321, 2.995, 2.426]
 print(max(pop)) # listedeki max değeri gösterecek
 print(min(pop)) # listedeki min değeri gösterecek
 
-print(round(15.068, 2)) # değeri yuvarlamamıza yarıyor.
+print(round(15.068, 2)) # değeri yuvarlamamıza yarıyor. 2 yazdık çünkü 2 basamak yuvarlamak istedik.
 
 help(round) # round fonksiyonun işlevini gösterir 
 
