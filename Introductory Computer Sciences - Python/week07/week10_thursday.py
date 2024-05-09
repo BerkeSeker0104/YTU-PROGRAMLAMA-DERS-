@@ -33,3 +33,46 @@ pd.options.display.max_columns = 99
 movies_df.head()
 
 movies_df.tail(2)
+
+temp_df = pd.concat([movies_df, movies_df])
+print(temp_df)
+
+# yinelenen satırlardan kurtulmak için temp_df = temp_df.drop_duplicates() yazacaz
+
+temp_df = temp_df.drop_duplicates()
+print(temp_df)
+
+temp_df.drop_duplicates(inplace=True, keep=False)
+temp_df.shape
+
+# Her sütunda kaç tane eksik değer olduğunu hesaplayın.
+
+movies_df.isnull()
+movies_df.isnull().sum()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
