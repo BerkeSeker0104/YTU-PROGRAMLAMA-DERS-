@@ -1,78 +1,33 @@
 import pandas as pd 
-pop = pd.read_csv("C:/Users/berke/Desktop/Software/YTU-PROGRAMLAMA-DERSLERİ/Introductory Computer Sciences - Python\week07\population.csv")
+
+pop = pd.read_csv("C:/Users/berke/Desktop/population.csv")
 print(pop)
 
-print(pop.head(999)) # verileri daha iyi bir formatta gÃ¶rmek iÃ§in head() kullandÄ±k
+print(pop.head())
 
-print(pop.tail(10)) # son satÄ±rlarÄ± gÃ¶rebilmek iÃ§in tail kullandÄ±k
 
-print(pop.info()) # veriler hakkÄ±nda bilgi alabiliriz
-
-print(pop.describe()) # deÄiÅkenlerin her biri iÃ§in aÃ§Ä±klayÄ±cÄ± istatistikleri verir
-
-print(pop[["CountryCode", "Total Population"]])
-
-# yalnÄ±zca ulke koduna sahip satÄ±rlarÄ± alma 
-
-pop_tr = pop [pop.loc[:, "CountryCode"]== "TUR"]
+pop_tr = pop[pop.loc[:, "CountryName"]=="Turkey"]
 print(pop_tr)
 
-# Turkiye icin yalnızca yil ve nufus degerlerini goster
 
-print(pop_tr.loc[:,["CountryCode","Year","Total Population"]])
-
-
-# IMDB movie data csv veri çerçevesini olustur
-import pandas as pd
-
-movies_df = pd.read_csv("C:/Users/berke/Desktop/Software/YTU-PROGRAMLAMA-DERSLERİ/Introductory Computer Sciences - Python\week07\IMDB-Movie-Data.csv", index_col="Title")
-movies_df.head()
-print(movies_df)
-
-pd.options.display.max_columns = 99
-movies_df.head()
-
-movies_df.tail(2)
-
-temp_df = pd.concat([movies_df, movies_df])
-print(temp_df)
-
-# yinelenen satırlardan kurtulmak için temp_df = temp_df.drop_duplicates() yazacaz
-
-temp_df = temp_df.drop_duplicates()
-print(temp_df)
-
-temp_df.drop_duplicates(inplace=True, keep=False)
-temp_df.shape
-
-# Her sütunda kaç tane eksik değer olduğunu hesaplayın.
-
-movies_df.isnull()
-movies_df.isnull().sum()
+movies_df = pd.read_csv("C:/Users/berke/Desktop/IMDB-Movie-Data.csv")
+print(movies_df.head(10))
 
 
+import matplotlib.pyplot as plt  # veri görselleştirmede kullanılır
 
+iris = pd.read_csv("C:/Users/berke/Desktop/iris.csv", index_col=0)
+print(iris)
 
+iris.plot (x='Sepal.Length', y='Sepal.Width')
+plt.show()
 
+iris.plot(x='Sepal.Length', y='Sepal.Width', kind = "scatter")
+plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+iris.plot(x='Sepal.Length', y='Sepal.Width', kind = "scatter")
+plt.xlabel('sepal length (cm)')
+plt.ylabel('sepal width (cm)')
+plt.title("Sepal Length vs Sepal Width")
+plt.show()
 
